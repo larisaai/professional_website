@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 952.00485 508.28473">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        
+      }
+
+      .cls-1 {
+        stroke-width: 7px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke-width: 8px;
+        opacity: 0.3;
+      }
+    </style>
+  </defs>
+  <title>2Asset 3</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <line class="cls-1" x1="188.66917" x2="188.66917" y2="496"/>
+      <path class="cls-1" d="M.00242,334.66667q475.99989.32977,952,.65966"/>
+    </g>
+    <g id="Layer_2-2" data-name="Layer 2">
+      <polyline class="cls-2" points="495.469 506.894 389.739 221.727 299.114 506.894"/>
+    </g>
+  </g>
+</svg>

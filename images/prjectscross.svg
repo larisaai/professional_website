@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 636.54807 429.89729">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1 {
+        stroke-width: 6.51688px;
+      }
+
+      .cls-2 {
+        stroke-width: 5.72391px;
+      }
+    </style>
+  </defs>
+  <title>2Asset 5</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_5" data-name="Layer 5">
+      <line class="cls-1" x1="135.66228" x2="135.66228" y2="429.89729"/>
+      <path class="cls-2" d="M.003,317.60961q318.271.32978,636.54214.65967"/>
+    </g>
+  </g>
+</svg>
