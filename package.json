@@ -1,0 +1,25 @@
+{
+  "name": "professional-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mysass": "node-sass sass/styles.scss css/style.css -w"
+
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larisaai/professional_website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larisaai/professional_website/issues"
+  },
+  "homepage": "https://github.com/larisaai/professional_website#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.4"
+  }
+}

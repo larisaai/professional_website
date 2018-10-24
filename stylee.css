@@ -1,0 +1,897 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+@media only screen and (min-width: 0px) {
+
+    /* mobile version */
+    .section1 {
+        background: rgba(0, 0, 0, .6);
+        z-index: 100;
+
+    }
+
+    .navigation {
+        width: 100%;
+        background-color: #DFDFDF;
+        height: 70px;
+        position: fixed;
+        z-index: 10;
+
+
+    }
+
+    .full-menu {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background-color: #DFDFDF;
+        opacity: 0.5;
+        transform: translateX(100%);
+        transition: all 0.4s ease-in;
+        margin: 10px;
+
+
+
+    }
+
+
+    .full-menu li {
+
+        color: #5E5C5C;
+        transition: all 0.3s ease-in;
+        cursor: pointer;
+    }
+
+
+
+
+    .full-menu ul {
+        list-style: none;
+    }
+
+    .full-menu.active {
+        transform: translateX(0%);
+        opacity: 1;
+        z-index: 0;
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .full-menu.active li {
+        opacity: 1;
+        transform: translateX(0%);
+        font-size: 20px;
+    }
+
+    .full-menu.active li a {
+        text-decoration: none;
+        color: #5E5C5C;
+        z-index: 20;
+
+    }
+
+    .full-menu.active li:hover {
+        text-decoration: underline;
+        font-size: 22px;
+    }
+
+
+    .hamburguer {
+        position: fixed;
+        width: 2em;
+        height: 2em;
+        z-index: 1;
+        cursor: pointer;
+        right: 10px;
+        top: 10px;
+        color: #5E5C5C;
+        fill: #5E5C5C;
+    }
+
+    /* lines animation */
+    .lines {
+        background-color: #5E5C5C;
+
+        width: 100%;
+        height: 5px;
+        margin: 5px 0;
+        transition: all 0.5s ease-in;
+    }
+
+    .close-hamburguer .lines {
+        cursor: pointer;
+    }
+
+    .close-hamburguer .line-top {
+        transform: translateY(200%) rotate(45deg);
+    }
+
+    .close-hamburguer .line-mid {
+        opacity: 0;
+    }
+
+    .close-hamburguer .line-bottom {
+        transform: translateY(-200%) rotate(135deg);
+    }
+
+    .logo img {
+        position: fixed;
+        top: 0;
+        width: 50px;
+        z-index: 10;
+        margin: 10px;
+
+    }
+
+    .background-wrap {
+        position: absolute;
+        z-index: -1000;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+
+    }
+
+    #video-bg-elem {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        min-height: 100%;
+        min-width: 100%;
+        margin: auto;
+    }
+
+
+    .boxname {
+
+        width: 50%;
+        text-align: center;
+        margin: auto;
+    }
+
+    #square {
+        fill: #DFDFDF;
+        stroke: #EDEEEF;
+        width: 150px;
+        opacity: 0.9;
+    }
+
+
+    .boxname h1 {
+        font-size: 33px;
+        color: white;
+        font-family: "Adobe Garamond Pro";
+        font-style: italic;
+    }
+
+    .change {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 40px;
+    }
+
+    #changeText {
+        height: 50px;
+        font-size: 17px;
+        text-align: center;
+        color: white;
+        margin-top: 50px;
+        font-family: "Adobe Garamond Pro";
+
+    }
+
+    .staticText {
+        width: 90%;
+        margin: auto;
+    }
+
+    .staticText h2 {
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .arrow {
+        fill: #DFDFDF;
+        width: 30px;
+        margin: auto;
+        padding-bottom: 20px;
+        opacity: 1;
+    }
+
+    .p02 {
+        animation: arrow 2s linear infinite;
+    }
+
+    .p03 {
+        animation: arrow 2s linear infinite;
+        animation-delay: 0.75s;
+    }
+
+    .p01 {
+        animation: arrow 2s linear infinite;
+        animation-delay: 1.5s;
+
+    }
+
+    @keyframes arrow {
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .section2 {
+        background-color: #EDEEEF;
+    }
+
+    h2,
+    h3 {
+        text-align: center;
+        padding: 10px;
+    }
+
+    h2 {
+        padding: 5px;
+    }
+
+    .section2 h2 {
+        margin: 0;
+        padding-top: 25px;
+
+
+    }
+
+
+    .project {
+        width: 230px;
+        height: auto;
+        margin: auto;
+        margin-bottom: 20px;
+        position: relative;
+
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .overlay a:hover {
+        text-decoration: underline;
+    }
+
+    .overlay a h4 {
+        margin-bottom: 0;
+    }
+
+
+
+    .project:hover .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(0, 0, 0, .6);
+        top: 0;
+        left: 0;
+        display: inline-block;
+        box-sizing: border-box;
+        text-align: center;
+        color: white;
+
+        font-size: 20px;
+
+
+    }
+
+
+    .project:hover {
+        cursor: pointer;
+
+    }
+
+    .project img {
+        max-width: 100%;
+    }
+
+
+
+    .project a {
+        text-align: center;
+        margin: auto;
+        z-index: 10;
+        font-size: 21px;
+        text-decoration: none;
+        color: white;
+        top: 10px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        padding: 0px;
+        margin: 0px;
+    }
+
+
+
+    .project h5 {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        margin: auto;
+        width: 40%;
+        margin-top: 80px;
+        font-size: 20px;
+    }
+
+    .project h5:hover {
+        text-decoration: underline;
+    }
+
+    .modal1,
+    .modal2,
+    .modal3,
+    .modal4,
+    .modal5,
+    .modal6 {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal1 h2,
+    .modal2 h2,
+    .modal3 h2,
+    .modal4 h2,
+    .modal5 h2,
+    .modal6 h2 {
+        padding: 20px;
+    }
+
+    .modal1 img,
+    .modal2 img,
+    .modal3 img,
+    .modal4 img,
+    .modal5 img,
+    .modal6 img {
+        display: block;
+        margin: 20px;
+        margin: auto;
+        width: 250px;
+
+    }
+
+    .modalcontent1 {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+
+    }
+
+    .close,
+    .close2,
+    .close3,
+    .close4,
+    .close5,
+    .close6 {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .close2:hover,
+    .close2:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .close3:hover,
+    .close3:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .close4:hover,
+    .close4:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .close5:hover,
+    .close5:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .close6:hover,
+    .close6:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+
+    .section3 {
+        background-color: #F0F0F0;
+
+    }
+
+    .section3 h2 {
+        margin-top: 0px;
+        padding: 20px;
+    }
+
+
+    .aboutbox img {
+        width: 90%;
+        display: block;
+        margin: auto;
+
+    }
+
+
+    .flipContainer {
+        position: relative;
+        margin: 10px auto;
+        z-index: 1;
+        width: 250px;
+        perspective: 1000;
+        cursor: pointer;
+    }
+
+    .flipBox {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: all 1.3s linear;
+
+    }
+
+    .flipContainer:hover .flipBox {
+        transform: rotateY(180deg);
+        box-shadow: -5px 5px 5px #aaa;
+    }
+
+    .f1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+
+    .f2 {
+        display: block;
+        transform: rotateY(180deg);
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 17px;
+        width: 260px;
+    }
+
+
+
+    .aboutbox p,
+    p {
+
+        text-align: center;
+        margin: auto;
+        padding: 35px;
+    }
+
+    p {
+        padding: 20px;
+    }
+
+    .devBox,
+    .designBox {
+        width: 250px;
+        height: 200px;
+        border-bottom: 3px solid #5E5C5C;
+        border-left: 3px solid #5E5C5C;
+        display: block;
+        margin: auto;
+        margin-bottom: 25px;
+
+    }
+
+    .devBox p,
+    .designBox p {
+        font-size: 16px;
+        text-align: center;
+        padding: 2px;
+
+    }
+
+    .devBox p {
+        margin-left: 10px;
+    }
+
+    .designBox p {
+        margin-right: 10px;
+    }
+
+    .designBox {
+
+        border-right: 3px solid #5E5C5C;
+        margin-bottom: 25px;
+        border-left: none;
+    }
+
+
+
+    .dd {
+        width: 50px;
+        display: block;
+        margin: auto;
+    }
+
+    h5 {
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+    /* here starts section4 => contact */
+    .section4 {
+        background-color: #DFDFDF;
+    }
+
+    .contactBox {
+        border: 2px solid #5E5C5C;
+        width: 50vw;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+
+    .contactBox h5 {
+        padding: 50px;
+    }
+
+    .follow {
+        display: block;
+        margin: auto;
+    }
+
+    .follow img {
+        width: 30px;
+        height: 30px;
+
+
+    }
+
+    .iconscontaier {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    .contact h5 {
+        font-size: 13px;
+        padding: 4px;
+        color: #000;
+
+    }
+
+    .contact a {
+        text-decoration: none;
+    }
+}
+
+/* First beackpoint */
+
+@media only screen and (min-width: 550px) {
+    #square {
+        width: 250px;
+    }
+
+    .section1 h1 {
+        font-size: 33px;
+        padding-top: 8px;
+
+    }
+
+
+    .section1 h2 {
+        font-size: 25px;
+    }
+
+    .section1 h3#changeText {
+        font-size: 20px;
+    }
+
+    .full-menu ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    /* .hamburguer {
+        display: none;
+    } */
+
+    .full-menu.active li {
+        font-size: 25px;
+        padding: 25px;
+    }
+
+    .full-menu.active li:hover {
+        font-size: 27px;
+        font-weight: 200;
+
+    }
+
+    .full-menu.active {
+        height: 60px;
+    }
+
+    svg#arrow_1 {
+        height: 60px;
+
+    }
+
+    .project {
+        width: 300px;
+
+    }
+
+
+    .section3 p {
+        font-size: 17.5px;
+        width: 90%;
+    }
+
+    .devBox,
+    .designBox {
+        width: 300px;
+        height: 250px;
+    }
+
+    .devBox p,
+    .designBox p {
+        display: block;
+        margin: auto;
+        font-size: 16px;
+
+    }
+
+    img.dd {
+        width: 70px;
+    }
+
+    .devBox h5,
+    .designBox h5 {
+        font-size: 19px;
+    }
+
+    .section4 h4 {
+        font-size: 22px;
+    }
+
+    .contactBox h5 {
+        font-size: 18px;
+    }
+
+    .section4 h5 {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    #square {
+        width: 300px;
+    }
+
+    foreignObject h1 {
+        font-size: 15px;
+    }
+
+    h3#changeText {
+        font-size: 20px;
+    }
+
+
+    .overlay a h4 {
+        font-size: 24px;
+
+
+    }
+
+    .overlay h5 {
+        font-size: 20px;
+        margin-top: 90px;
+
+
+    }
+
+
+}
+
+@media only screen and (min-width: 900px) {
+    .section1 h1 {
+        font-size: 32px;
+
+    }
+
+    h3#changeText {
+        width: 60%;
+        margin: auto;
+    }
+
+    .section1 h2 {
+        margin-bottom: 50px;
+    }
+
+    #square {}
+
+    .boxname {
+        width: 40%;
+    }
+
+    .section2 h2,
+    .section3 h2 {
+        font-size: 27px;
+    }
+
+    .projectBox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 75%;
+        margin: auto;
+
+
+    }
+
+    .project {
+        margin-bottom: 40px;
+    }
+
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay h5 {
+        font-size: 20px;
+    }
+
+    .aboutbox {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 75%;
+        margin: auto;
+    }
+
+
+    .aboutbox img {
+        width: 250px;
+    }
+
+    .aboutbox p {
+        width: 100%;
+    }
+
+    .aboutContainer h3 {
+        font-size: 23px;
+    }
+
+    .offer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 75%;
+        margin: auto;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {}
+
+@media only screen and (min-width: 1200px) {
+
+    body {
+        background-color: #F0F0F0;
+    }
+
+    #square {
+        width: 370px;
+    }
+
+    .boxname h1 {
+        font-size: 32px;
+
+    }
+
+
+    .change h3#changeText {
+        font-size: 25px;
+        width: 50%;
+    }
+
+    .staticText h2 {
+        padding-top: 50px;
+        font-size: 30px;
+    }
+
+    .projectBox {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+        margin: auto;
+
+    }
+
+    .modalcontent1 h2 {
+        padding: 50px;
+    }
+
+    .modalcontent2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 50px;
+    }
+
+    .modalcontent2 img {
+        width: 400px;
+
+    }
+
+    .section3 {
+        width: 80%;
+        margin: auto;
+    }
+
+    .aboutbox img {
+        width: 350px;
+        margin: auto;
+
+    }
+
+    .f2 {
+        width: 250px;
+    }
+
+
+}
