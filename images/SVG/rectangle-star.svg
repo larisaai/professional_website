@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97.89636 97.89636">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>2Asset 1</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <rect class="cls-1" x="14.78151" y="14.78151" width="68.33333" height="68.33333" transform="translate(-19.18237 36.69758) rotate(-34.80653)"/>
+      <rect class="cls-1" x="14.78151" y="14.78151" width="68.33333" height="68.33333" transform="translate(18.19537 -13.06886) rotate(18.62425)"/>
+      <rect class="cls-1" x="13.97046" y="13.61484" width="68.33333" height="68.33333" transform="translate(-5.03339 5.67269) rotate(-6.40983)"/>
+    </g>
+  </g>
+</svg>
